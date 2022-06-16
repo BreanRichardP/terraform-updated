@@ -1,14 +1,3 @@
-terraform {
-  backend "s3" {
-    bucket = "taskexecutionforterraform"
-    key = "terraform/terraform.tfstate"
-    region = "us-west-2"
-    dynamodb_table = "terraform-dynamodb-lock-state"
-  }
-}
-provider "aws" {
-  region = "us-west-2"
-}
 module "my_vpc" {
   source           = "../Terraform 4/modules/vpc"
   vpc_cidr         = "192.168.0.0/16"

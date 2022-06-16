@@ -1,0 +1,1 @@
+"To create an VPC instance using module"
